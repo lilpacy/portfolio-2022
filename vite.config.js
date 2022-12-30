@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import autoprefixer from "autoprefixer";
+import tailwindcss from "tailwindcss"
 
 export default defineConfig(({ command }) => {
   if (command === "serve") {
@@ -14,7 +15,7 @@ export default defineConfig(({ command }) => {
     return {
       css: {
         postcss: {
-          plugins: [autoprefixer],
+          plugins: [autoprefixer,tailwindcss],
         },
       },
     };
