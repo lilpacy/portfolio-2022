@@ -1,10 +1,11 @@
 import '../style.scss'
 import './about.sass'
 import {Nav} from "../components/nav";
+import {Footer} from "../components/footer";
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   ${Nav()}
-  <div class="flex flex-col gap-10 justify-center items-center md:px-4">
+  <div class="flex flex-col gap-10 justify-center items-center px-10 md:px-4">
     <h1>自己紹介</h1>
     <img class="w-80" src="profile.png" />
     <p class="">1994年 福岡生まれ
@@ -24,4 +25,5 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       現在はNuxt.js/Next.jsを用いたフロントエンド開発、Ruby/Go/Elixirなど用いたサーバーサイド開発、Solidityを用いたスマートコントラクト開発など
     </p>
   </div>
+  ${Footer()}
 `

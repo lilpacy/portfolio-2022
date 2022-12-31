@@ -8,6 +8,7 @@ import twitterIcon from './twitter.svg'
 import githubIcon from './github.svg'
 import vrchatIcon from './vrchat.svg'
 import {Nav} from "./components/nav";
+import {Footer} from "./components/footer";
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   ${Nav()}
@@ -33,6 +34,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       </strong>
     </p>
   </div>
+  ${Footer()}
 `
 
 window.onload = () => {
