@@ -7,8 +7,10 @@ import wpIcon from './wordpress.svg'
 import twitterIcon from './twitter.svg'
 import githubIcon from './github.svg'
 import vrchatIcon from './vrchat.svg'
+import {Nav} from "./components/nav";
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
+  ${Nav()}
   <div class="w-full flex flex-col gap-10 justify-center items-center">
     <h1>Hello Happy World!</h1>
 
