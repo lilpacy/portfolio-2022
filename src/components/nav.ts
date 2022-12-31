@@ -1,13 +1,13 @@
 import './nav.scss'
 export const Nav = () => `
-  <nav class="absolute left-0 top-0 w-full">
+  <nav class="">
     <ul class="flex w-full items-center gap-4 p-4">
-      <li>
+      <li class="link">
         <a href="/">
           Home
         </a>
       </li>
-      <li>
+      <li class="link">
         <a href="/about/">
           About
         </a>

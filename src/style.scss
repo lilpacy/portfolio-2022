@@ -2,11 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "variables.scss";
+
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -29,10 +28,8 @@ a:hover {
 }
 
 body {
-  margin: 0;
   display: flex;
   place-items: center;
-  min-height: 100vh;
 }
 
 h1 {
@@ -42,8 +39,6 @@ h1 {
 
 #app {
   width: 100%;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -91,8 +86,13 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+  a {
+    color: $light-primary-color;
+    //filter: drop-shadow(0 0 2em $light-primary-color);
+  }
   a:hover {
-    color: #747bff;
+    color: $light-secondary-color;
+    //filter: drop-shadow(0 0 2em $light-secondary-color);
   }
   button {
     background-color: #f9f9f9;

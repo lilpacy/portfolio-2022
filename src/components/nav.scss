@@ -1,0 +1,15 @@
+@import "../variables.scss";
+
+.link {
+  will-change: filter;
+}
+
+.link:hover {
+  filter: drop-shadow(0 0 2em $primary-color);
+}
+
+@media (prefers-color-scheme: light) {
+  .link:hover {
+    filter: drop-shadow(0 0 2em $light-primary-color);
+  }
+}
