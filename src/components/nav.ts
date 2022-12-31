@@ -1,6 +1,6 @@
 import './nav.scss'
 export const Nav = () => `
-  <nav class="">
+  <nav class="mb-10">
     <ul class="flex w-full items-center gap-4 p-4">
       <li class="link">
         <a href="/">

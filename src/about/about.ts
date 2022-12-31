@@ -4,7 +4,7 @@ import {Nav} from "../components/nav";
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   ${Nav()}
-  <div class="flex flex-col gap-10 justify-center items-center">
+  <div class="flex flex-col gap-10 justify-center items-center md:px-4">
     <h1>自己紹介</h1>
     <img class="w-80" src="profile.png" />
     <p class="">1994年 福岡生まれ
@@ -19,6 +19,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       広告配信ログの集計基盤責任者としてScalaでサーバーサイド/インフラ保守運用、新規開発<br />
       2021年6月 CryptoGames.incへフルスタックエンジニアとしてJoin<br />
       同年11月〜 同社NFT事業開発リード<br />
+      2022年7月〜 CryptoGames CTO<br />
       <br />
       現在はNuxt.js/Next.jsを用いたフロントエンド開発、Ruby/Go/Elixirなど用いたサーバーサイド開発、Solidityを用いたスマートコントラクト開発など
     </p>
