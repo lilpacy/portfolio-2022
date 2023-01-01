@@ -1,12 +1,5 @@
 import './style.scss'
 import './index.scss'
-import zennIcon from './zenn.svg'
-import qiitaIcon from './qiita.svg'
-import pagesIcon from './githubpages.svg'
-import wpIcon from './wordpress.svg'
-import twitterIcon from './twitter.svg'
-import githubIcon from './github.svg'
-import vrchatIcon from './vrchat.svg'
 import {template} from "./template";
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = template(`
@@ -16,13 +9,13 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = template(`
     <canvas id="canvas"></canvas>
 
     <div class="flex gap-2">
-      <a href="https://zenn.dev/lilpacy"><img class="icon" src="${zennIcon}" /></a> 
-      <a href="https://qiita.com/lilpacy"><img class="icon" src="${qiitaIcon}" /></a>
-      <a href="https://lilpacy.github.io/"><img class="icon" src="${pagesIcon}" /></a> 
-      <a href="http://lilpacy.info/"><img class="icon" src="${wpIcon}" /></a>
-      <a href="https://twitter.com/lilpacy_"><img class="icon" src="${twitterIcon}" /></a>
-      <a href="https://github.com/lilpacy"><img class="icon" src="${githubIcon}" /></a>
-      <a href="https://vrchat.com/home/user/usr_7d9e5881-5bff-48fb-aa13-53415ba074ac"><img class="icon" src="${vrchatIcon}" /></a>
+      <a href="https://zenn.dev/lilpacy"><img class="icon" src="/zenn.svg" /></a> 
+      <a href="https://qiita.com/lilpacy"><img class="icon" src="/qiita.svg" /></a>
+      <a href="https://lilpacy.github.io/"><img class="icon" src="/githubpages.svg" /></a> 
+      <a href="http://lilpacy.info/"><img class="icon" src="/wordpress.svg" /></a>
+      <a href="https://twitter.com/0xpacy"><img class="icon" src="/twitter.svg" /></a>
+      <a href="https://github.com/lilpacy"><img class="icon" src="/github.svg" /></a>
+      <a href="https://vrchat.com/home/user/usr_7d9e5881-5bff-48fb-aa13-53415ba074ac"><img class="icon" src="/vrchat.svg" /></a>
     </div>
     <p>
       <strong>
