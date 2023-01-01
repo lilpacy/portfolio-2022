@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "upload-ogp": "arkb deploy public/og-image.png --use-bundler https://node2.bundlr.network"
+    "upload-ogp": "arkb deploy public/og-image.png --use-bundler https://node2.bundlr.network",
+    "deploy": "arkb deploy dist --use-bundler https://node2.bundlr.network --tag-name DEPLOY --tag-value pacy-portfolio-2022"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
