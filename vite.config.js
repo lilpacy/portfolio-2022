@@ -17,6 +17,7 @@ export default defineConfig(({command}) => {
   return {
     ...serveOptions,
     root: './src',
+    base: "./",
     publicDir: '../public',
     build: {
       outDir: "../dist",
