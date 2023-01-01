@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "upload-ogp": "arkb deploy public/og-image.png --use-bundler https://node2.bundlr.network"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
