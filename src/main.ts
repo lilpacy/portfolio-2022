@@ -3,7 +3,7 @@ import './index.scss'
 import {template} from "./template";
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = template(`
-  <div class="w-full flex flex-col gap-10 justify-center items-center">
+  <div class="w-[80vw] m-auto lg:w-full flex flex-col gap-10 md:gap-16 justify-center items-center">
     <h1>Hello Happy World!</h1>
 
     <canvas id="canvas"></canvas>
