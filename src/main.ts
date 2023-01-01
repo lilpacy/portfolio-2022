@@ -2,6 +2,10 @@ import './style.scss'
 import './index.scss'
 import {template} from "./template";
 
+const options = {
+  path: {home: './', about: './about'},
+}
+
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = template(`
   <div class="w-[80vw] m-auto lg:w-full flex flex-col gap-10 md:gap-16 justify-center items-center">
     <h1>Hello Happy World!</h1>
@@ -23,7 +27,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = template(`
       </strong>
     </p>
   </div>
-`)
+`, options)
 
 window.onload = () => {
   let canvas: HTMLCanvasElement|null = document.getElementById("canvas") as HTMLCanvasElement;

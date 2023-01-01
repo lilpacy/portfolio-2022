@@ -2,6 +2,10 @@ import '../style.scss'
 import './about.scss'
 import {template} from "../template";
 
+const options = {
+  path: { home: '../', about: '.' },
+}
+
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = template(`
   <div class="flex flex-col gap-10 justify-center items-center px-10 md:px-4">
     <h1>自己紹介</h1>
@@ -67,4 +71,4 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = template(`
       </tbody>
     </table>
   </div>
-`)
+`, options)
