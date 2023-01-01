@@ -7,11 +7,9 @@ import wpIcon from './wordpress.svg'
 import twitterIcon from './twitter.svg'
 import githubIcon from './github.svg'
 import vrchatIcon from './vrchat.svg'
-import {Nav} from "./components/nav";
-import {Footer} from "./components/footer";
+import {template} from "./template";
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  ${Nav()}
+document.querySelector<HTMLDivElement>('#app')!.innerHTML = template(`
   <div class="w-full flex flex-col gap-10 justify-center items-center">
     <h1>Hello Happy World!</h1>
 
@@ -32,8 +30,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       </strong>
     </p>
   </div>
-  ${Footer()}
-`
+`)
 
 window.onload = () => {
   let canvas: HTMLCanvasElement|null = document.getElementById("canvas") as HTMLCanvasElement;
