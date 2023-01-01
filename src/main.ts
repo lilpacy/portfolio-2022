@@ -25,12 +25,10 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <a href="https://twitter.com/lilpacy_"><img class="icon" src="${twitterIcon}" /></a>
       <a href="https://github.com/lilpacy"><img class="icon" src="${githubIcon}" /></a>
       <a href="https://vrchat.com/home/user/usr_7d9e5881-5bff-48fb-aa13-53415ba074ac"><img class="icon" src="${vrchatIcon}" /></a>
-      <!--  <a href="https://www.wantedly.com/id/tomohiroseto"><img class="icon" src="wantedly.png" /></a>-->
-      <!-- <a href="https://note.com/lilpacy"><img class="icon" src="note.png" /></a> -->
     </div>
     <p>
       <strong>
-        Please tap a button to get further information.
+        Please press a button to get more information.
       </strong>
     </p>
   </div>
