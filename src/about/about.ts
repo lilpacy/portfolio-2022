@@ -9,7 +9,7 @@ const options = {
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = template(`
   <div class="flex flex-col gap-10 justify-center items-center px-10 md:px-4">
     <h1>自己紹介</h1>
-    <img class="w-80" src="./profile.png" />
+    <img class="w-80" src="${options.path.home}profile.png" />
     <table class="w-[70vw] md:w-full">
       <tbody>
         <tr>
