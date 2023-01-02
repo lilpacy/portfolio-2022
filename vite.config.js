@@ -33,7 +33,10 @@ export default defineConfig(({command}) => {
       postcss: {
         plugins: [autoprefixer, tailwindcss],
       },
-    }
+    },
+    optimizeDeps: {
+      exclude: ['pathtest'],
+    },
   };
 })
 ;

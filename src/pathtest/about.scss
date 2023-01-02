@@ -1,0 +1,61 @@
+@import "../variables.scss";
+
+@media (max-width: 559px) { // smartphone
+  canvas {
+    width: 100%;
+    height: 30vh;
+    background-color: #666;
+    -webkit-mask: url(mask.svg)
+    50% 50% / cover no-repeat;
+  }
+  .icon {
+    width: 2.5rem;
+    margin: 0 2px;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 959px) {
+  canvas {
+    width: 70vw;
+    height: 100%;
+    background-color: #666;
+    -webkit-mask: url(mask.svg)
+    50% 50% / 75% no-repeat;
+  }
+  .icon {
+    width: 3rem;
+    margin: 0 0.5rem;
+  }
+}
+
+@media (min-width: 960px) { // pc
+  canvas {
+    width: 70%;
+    height: 100%;
+    background-color: #666;
+    -webkit-mask: url(mask.svg)
+    50% 50% / 75% no-repeat;
+  }
+  .icon {
+    width: 3rem;
+    margin: 0 0.5rem;
+  }
+}
+
+.icon {
+  @apply w-10;
+  filter: invert(100%) sepia(0%) saturate(6496%) hue-rotate(164deg) brightness(115%) contrast(73%);
+}
+
+.icon:hover {
+  filter: drop-shadow(0 0 2em $primary-color);
+}
+
+@media (prefers-color-scheme: light) {
+  .icon {
+    filter: invert(16%) sepia(0%) saturate(0%) hue-rotate(122deg) brightness(92%) contrast(85%);
+  }
+  .icon:hover {
+    filter: drop-shadow(0 0 2em $light-primary-color);
+  }
+}
