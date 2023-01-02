@@ -3,7 +3,7 @@ import './index.scss'
 import {template} from "./template";
 
 const options = {
-  path: {home: './', about: './pathtest/'},
+  path: {home: './', about: './about/index.html'},
 }
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = template(`
